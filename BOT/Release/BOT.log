@@ -1,0 +1,2 @@
+﻿  Source.cpp
+C:\Users\Sonyc\source\repos\BOT\BOT\Source.cpp(35,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
