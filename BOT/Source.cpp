@@ -139,7 +139,7 @@ void Bot_O(int turne)
 #endif //VERTICAL_ATTACK
 
 #ifdef HORIZONTAL_ATTACK
-	for (int i = 0; i < 9; i += 3)		// horizontal protection 
+	for (int i = 0; i < 9; i += 3)		
 	{
 		if (arr[i] == 'O' && arr[i] == arr[i + 1] && arr[i + 2] == ' ')
 		{
@@ -175,7 +175,7 @@ void Bot_O(int turne)
 #endif //VERTICAL_PROTECTION
 
 #ifdef HORIZONTAL_PROTECTION
-	for (int i = 0; i < 9; i += 3)		// horizontal protection 
+	for (int i = 0; i < 9; i += 3)		
 	{
 		if (arr[i] == 'X' && arr[i] == arr[i + 1] && arr[i + 2] == ' ')
 		{
@@ -214,7 +214,7 @@ void Bot_O(int turne)
 #endif // DIAGONAL_PROTECTION
 
 #ifdef PASIV
-	for (int i = 0; i < 9; i++)		// horizontal protection 
+	for (int i = 0; i < 9; i++)		
 	{
 		if (arr[i] == ' ')
 		{
@@ -275,7 +275,7 @@ void Draw()
 	{
 	    if (arr[i] == 'X')
 			setColor(Red);
-		else if (arr[i] == 'O') // öâåò äëÿ çíàêîâ
+		else if (arr[i] == 'O') // Ã¶Ã¢Ã¥Ã² Ã¤Ã«Ã¿ Ã§Ã­Ã ÃªÃ®Ã¢
 			setColor(Blue);
 
 		cout <<" "<<arr[i]; 
@@ -284,7 +284,7 @@ void Draw()
 
 		if (i == 2 || i == 5)
 			cout << "\n---+---+---\n";
-		// âûâîä ïîëÿ
+		// Ã¢Ã»Ã¢Ã®Ã¤ Ã¯Ã®Ã«Ã¿
 		else if (i != 8)	
 			cout << " |";		
 	}
@@ -304,35 +304,6 @@ void new_game(int turne, char walk, char game)
 	system("cls");
 	Game_x(turne, walk, game);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
